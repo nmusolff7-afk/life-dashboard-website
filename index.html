@@ -152,7 +152,7 @@
                 <div class="signal-stack" id="signal-stack">
                   <div class="signal-row">
                     <strong>Sources</strong>
-                    <span>Apple Health, Garmin, Strava, Plaid, Gmail, Outlook, Google Calendar, and manual entry.</span>
+                    <span>Health data, nutrition logs, financial account data, calendar context, communication signals, and manual entry.</span>
                   </div>
                   <div class="signal-row">
                     <strong>Control</strong>
@@ -175,13 +175,13 @@
         <div class="proof-track">
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>Deterministic scoring</div>
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>User-controlled connections</div>
-          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg>Plaid-backed finance visibility</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg>Read-only financial visibility</div>
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 7v5l3 3"/><circle cx="12" cy="12" r="9"/></svg>Time as a first-class domain</div>
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 8h14M5 12h14M5 16h8"/></svg>Google and Microsoft reviewer clarity</div>
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>No data selling</div>
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>Deterministic scoring</div>
           <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>User-controlled connections</div>
-          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg>Plaid-backed finance visibility</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg>Read-only financial visibility</div>
         </div>
       </div>
     </section>
@@ -244,7 +244,7 @@
             <h3>Fitness</h3>
             <p>Recovery, sleep, body signals, and workouts are presented as a coherent performance picture instead of disconnected metrics.</p>
             <span class="metric-stat">Recovery + output</span>
-            <span class="metric-hint">Apple Health, wearables, manual logs, and trends.</span>
+            <span class="metric-hint">Health data, wearable summaries, manual logs, and trends.</span>
           </article>
           <article class="proof-card">
             <div class="icon-head">
@@ -303,7 +303,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>
             </div>
             <h3>Why it lowers trust friction</h3>
-            <p>Google OAuth, Microsoft review, Plaid credibility, Garmin partner review, and App Store scrutiny all benefit when the product surface reads as specific and intelligible instead of vague.</p>
+            <p>Reviewer scrutiny drops when the product surface reads as specific, intelligible, and grounded in clear user-controlled data categories instead of vague platform claims.</p>
           </article>
         </div>
       </div>
@@ -456,7 +456,7 @@
         sideTitle: "The system stays readable.",
         sideCopy: "AI can summarize tradeoffs when the user asks, but it is not pretending to be the scoring engine.",
         signals: [
-          ["Sources", "Apple Health, Garmin, Strava, Plaid, Gmail, Outlook, Google Calendar, and manual entry."],
+          ["Sources", "Health data, nutrition logs, financial account data, calendar context, communication signals, and manual entry."],
           ["Control", "Connections are optional. More context improves the dashboard without making it all-or-nothing."],
           ["Trust", "Deterministic logic keeps the system fast, auditable, and easier to approve."]
         ]
@@ -474,9 +474,9 @@
         ],
         sideKicker: "Connection posture",
         sideTitle: "Built to ingest, not impersonate.",
-        sideCopy: "The point is not to replace Strava, Garmin, or Apple Health. It is to make them finally add up in the same system.",
+        sideCopy: "The point is not to replace existing trackers. It is to make health signals finally add up in the same system.",
         signals: [
-          ["Wearables", "Apple Health, Health Connect, and Garmin-compatible inputs where available."],
+          ["Inputs", "Health data, activity signals, wearable summaries, and manual logs where available."],
           ["History", "Trend visibility matters more than isolated PR moments."],
           ["Use case", "Users should be able to see whether the body is helping or constraining the day."]
         ]
@@ -516,7 +516,7 @@
         sideTitle: "A clear read-only story.",
         sideCopy: "This is where specificity matters. The site should make it obvious that financial visibility is for decision quality, not money movement.",
         signals: [
-          ["Provider", "Plaid-backed read-only aggregation for transactions, accounts, and budget visibility."],
+          ["Data", "Read-only financial account context for transactions, balances, and budget visibility."],
           ["Posture", "Not a bank. Not a broker. Not a financial advisor."],
           ["Role", "The category helps users understand what money is doing to the rest of the week."]
         ]
@@ -536,7 +536,7 @@
         sideTitle: "This is what makes the system feel new.",
         sideCopy: "No finance app or meal tracker can really score the day itself. The Time category is where cross-domain context becomes a product, not just a feature list.",
         signals: [
-          ["Inputs", "Calendar, email, schedule shape, and passive day-context signals."],
+          ["Inputs", "Calendar context, communication signals, schedule shape, and passive day-context signals."],
           ["Value", "The category helps explain why a day felt chaotic even when output looked decent."],
           ["Difference", "Time turns the system into more than a bundle of trackers."]
         ]
