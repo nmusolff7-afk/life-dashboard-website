@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Life Dashboard | One view across fitness, nutrition, finance, and time</title>
+  <title>Life Dashboard | One intelligent view across fitness, nutrition, finance, and time</title>
   <meta
     name="description"
-    content="Life Dashboard unifies fitness, nutrition, finance, and time into one intelligent dashboard with deterministic scoring, careful AI, and privacy-first controls."
+    content="Life Dashboard unifies fitness, nutrition, finance, and time into one intelligent dashboard with deterministic scoring, careful AI, and user-controlled connections."
   />
   <meta name="theme-color" content="#0A0A0F" />
   <link rel="icon" href="/apex-logo.png" />
@@ -39,80 +39,130 @@
     <section class="hero">
       <div class="wrap hero-shell">
         <div class="hero-copy">
-          <span class="eyebrow">A single intelligent dashboard for ambitious generalists</span>
-          <h1>Stop juggling your life in seven different apps.</h1>
+          <span class="eyebrow">A premium personal operating system</span>
+          <h1>One place to see what your body, money, calendar, and decisions are doing to each other.</h1>
           <p class="hero-lede">
             Life Dashboard brings <strong>Fitness</strong>, <strong>Nutrition</strong>, <strong>Finance</strong>, and
-            <strong>Time</strong> into one view. Deterministic scoring shows what matters today, and a context-aware
-            assistant helps users ask better questions without taking away agency.
+            <strong>Time</strong> into one intelligent interface. Deterministic scoring makes the system legible. The
+            assistant adds context when users ask for it.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="mailto:nathan@lifedashboardapp.com?subject=Life%20Dashboard%20early%20access">Request early access</a>
-            <a class="button secondary" href="/security">See privacy and security</a>
+            <a class="button secondary" href="/security">Review security posture</a>
           </div>
-          <div class="hero-proof">
-            <span>Real product, real company identity</span>
-            <span>User-controlled source connections</span>
-            <span>Data is not sold</span>
+          <div class="hero-points">
+            <div class="hero-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>
+              <div>
+                <strong>Deterministic scoring is the differentiator</strong>
+                <span>Fast, reproducible, explainable scoring makes the product trustworthy before AI ever speaks.</span>
+              </div>
+            </div>
+            <div class="hero-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 10h8M8 14h5"/></svg>
+              <div>
+                <strong>The product is built around four real domains</strong>
+                <span>Fitness, Nutrition, Finance, and Time each stay visible as first-class signals in the same system.</span>
+              </div>
+            </div>
+            <div class="hero-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/><path d="M9.5 12.5l1.7 1.7 3.7-3.7"/></svg>
+              <div>
+                <strong>Privacy is product infrastructure</strong>
+                <span>Connections are optional, control stays with the user, and the business is not built around selling data.</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="window-bar" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="hero-stage">
+          <div class="stage-top">
+            <div class="stage-label">Interactive product view</div>
+            <div class="stage-status">Live concept surface</div>
           </div>
-          <div class="dashboard-frame">
-            <div class="score-banner">
-              <div class="metric-card primary">
-                <div class="metric-label">Overall Score</div>
-                <div class="metric-value">84</div>
-                <div class="metric-text">Fast, reproducible, explainable scoring built from real signals across the four domains.</div>
+
+          <div class="stage-tabs" role="tablist" aria-label="Product domains">
+            <button class="stage-tab" type="button" role="tab" aria-selected="true" data-domain="overview">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>
+              Overview
+            </button>
+            <button class="stage-tab" type="button" role="tab" aria-selected="false" data-domain="fitness">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 7v10M18 7v10M2 9v6h4V9H2zm16 0v6h4V9zM6 12h12"/></svg>
+              Fitness
+            </button>
+            <button class="stage-tab" type="button" role="tab" aria-selected="false" data-domain="nutrition">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M8 3v7M12 3v7M16 3v7"/><path d="M12 10v11"/><path d="M6 6h12"/></svg>
+              Nutrition
+            </button>
+            <button class="stage-tab" type="button" role="tab" aria-selected="false" data-domain="finance">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M8 14h4"/></svg>
+              Finance
+            </button>
+            <button class="stage-tab" type="button" role="tab" aria-selected="false" data-domain="time">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              Time
+            </button>
+          </div>
+
+          <div class="stage-grid">
+            <div class="stage-card primary">
+              <div class="stage-card-head">
+                <div>
+                  <div class="stage-card-kicker" id="stage-kicker">Overall Score</div>
+                  <div class="stage-card-title" id="stage-title">Four categories, one daily picture.</div>
+                </div>
+                <div class="overall-number" id="stage-score">84</div>
               </div>
-              <div class="mini-grid">
-                <div class="mini-card">
-                  <div class="mini-label">Fitness</div>
-                  <div class="mini-value">81</div>
-                  <div class="mini-text">Recovery, workouts, sleep, and trend signals.</div>
+              <div class="stage-card-copy" id="stage-copy">
+                The dashboard is built to answer a simple question quickly: what matters most today once health, money,
+                and schedule are visible in the same system?
+              </div>
+              <div class="bar-group" id="stage-bars">
+                <div class="bar-row">
+                  <strong>Fitness</strong>
+                  <div class="bar-track"><span class="bar-fill" data-target="81"></span></div>
+                  <div class="bar-value">81</div>
                 </div>
-                <div class="mini-card">
-                  <div class="mini-label">Nutrition</div>
-                  <div class="mini-value">88</div>
-                  <div class="mini-text">Calories, macros, hydration, and consistency.</div>
+                <div class="bar-row">
+                  <strong>Nutrition</strong>
+                  <div class="bar-track"><span class="bar-fill" data-target="88"></span></div>
+                  <div class="bar-value">88</div>
                 </div>
-                <div class="mini-card">
-                  <div class="mini-label">Finance</div>
-                  <div class="mini-value">79</div>
-                  <div class="mini-text">Spending, bills, budget discipline, savings rhythm.</div>
+                <div class="bar-row">
+                  <strong>Finance</strong>
+                  <div class="bar-track"><span class="bar-fill" data-target="79"></span></div>
+                  <div class="bar-value">79</div>
                 </div>
-                <div class="mini-card">
-                  <div class="mini-label">Time</div>
-                  <div class="mini-value">86</div>
-                  <div class="mini-text">Day coherence, schedule density, and attention shape.</div>
+                <div class="bar-row">
+                  <strong>Time</strong>
+                  <div class="bar-track"><span class="bar-fill" data-target="86"></span></div>
+                  <div class="bar-value">86</div>
                 </div>
               </div>
             </div>
 
-            <div class="chat-card">
-              <div class="chat-meta">Context-aware assistant</div>
-              <div class="chat-question">“What should I focus on before tonight?”</div>
-              <div class="chat-answer">
-                <strong>Today’s bottleneck is time, not effort.</strong> Nutrition is on track, workout load is manageable, and the schedule gets crowded after 4 PM. The assistant can explain the score inputs and summarize what is most constrained right now.
+            <div class="stage-side">
+              <div class="stat-card">
+                <div class="panel-kicker" id="side-kicker">Context-aware assistant</div>
+                <strong id="side-title">The system stays readable.</strong>
+                <p id="side-copy">AI can summarize tradeoffs when the user asks, but it is not pretending to be the scoring engine.</p>
               </div>
-            </div>
-
-            <div class="integration-card">
-              <div class="integration-title">Designed around optional source connections</div>
-              <div class="integration-list">
-                <span class="integration-chip">Apple Health</span>
-                <span class="integration-chip">Health Connect</span>
-                <span class="integration-chip">Garmin</span>
-                <span class="integration-chip">Strava</span>
-                <span class="integration-chip">Plaid</span>
-                <span class="integration-chip">Gmail</span>
-                <span class="integration-chip">Outlook</span>
-                <span class="integration-chip">Google Calendar</span>
+              <div class="detail-card">
+                <div class="panel-kicker">Source posture</div>
+                <div class="signal-stack" id="signal-stack">
+                  <div class="signal-row">
+                    <strong>Sources</strong>
+                    <span>Apple Health, Garmin, Strava, Plaid, Gmail, Outlook, Google Calendar, and manual entry.</span>
+                  </div>
+                  <div class="signal-row">
+                    <strong>Control</strong>
+                    <span>Connections are optional. More context improves the dashboard without making it all-or-nothing.</span>
+                  </div>
+                  <div class="signal-row">
+                    <strong>Trust</strong>
+                    <span>Deterministic logic keeps the system fast, auditable, and easier to approve.</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -120,23 +170,18 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap trust-row">
-        <div class="trust-item">
-          <strong>Why this exists</strong>
-          <p>Most users already track seriously. The problem is fragmentation, not motivation.</p>
-        </div>
-        <div class="trust-item">
-          <strong>What makes it different</strong>
-          <p>Deterministic scoring and unified context create a product specialty apps cannot replicate alone.</p>
-        </div>
-        <div class="trust-item">
-          <strong>AI posture</strong>
-          <p>AI is used carefully for synthesis and friction reduction, not as a black box for core scoring.</p>
-        </div>
-        <div class="trust-item">
-          <strong>Reviewer confidence</strong>
-          <p>Specific product language, company identity, legal pages, and clear data controls reduce trust friction.</p>
+    <section class="proof-band" aria-label="Trust signals">
+      <div class="wrap">
+        <div class="proof-track">
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>Deterministic scoring</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>User-controlled connections</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg>Plaid-backed finance visibility</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 7v5l3 3"/><circle cx="12" cy="12" r="9"/></svg>Time as a first-class domain</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 8h14M5 12h14M5 16h8"/></svg>Google and Microsoft reviewer clarity</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>No data selling</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>Deterministic scoring</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>User-controlled connections</div>
+          <div class="proof-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg>Plaid-backed finance visibility</div>
         </div>
       </div>
     </section>
@@ -145,27 +190,36 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="eyebrow">Why now</span>
-            <h2>A premium product for people already living across multiple systems.</h2>
+            <span class="eyebrow">Why this exists</span>
+            <h2>The problem is fragmentation, not a lack of trackers.</h2>
           </div>
           <p>
-            Life Dashboard is built for high-agency users who already track meals, workouts, money, and commitments. It
-            reduces cognitive overhead by turning scattered inputs into one coherent daily picture.
+            Life Dashboard is for users who already track seriously but are tired of checking body metrics, meals, money,
+            schedule, and tasks in isolation.
           </p>
         </div>
-        <div class="panel cred-grid">
-          <div class="cred-card">
-            <h3>Fragmentation is the real problem</h3>
-            <p>Users bounce between body metrics, meal tracking, bank apps, email, calendars, and task systems without any shared context.</p>
-          </div>
-          <div class="cred-card">
-            <h3>Unified context changes the quality of decisions</h3>
-            <p>The point is not more data. It is seeing the tradeoffs between recovery, spending, schedule pressure, and execution in one place.</p>
-          </div>
-          <div class="cred-card">
-            <h3>Built for serious daily use</h3>
-            <p>Life Dashboard is not trying to replace every specialist app. It becomes the layer that makes them finally add up.</p>
-          </div>
+        <div class="panel three-col">
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            </div>
+            <h3>Too many systems</h3>
+            <p>Most target users are already inside six to ten apps every day just to answer simple questions about whether they are on track.</p>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>
+            </div>
+            <h3>Cross-domain tradeoffs are invisible</h3>
+            <p>Sleep debt, spending drift, and schedule pressure change decisions in ways no single-domain app can really explain.</p>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+            <h3>Time matters as much as output</h3>
+            <p>The shape of the day itself deserves its own score, which is why Time exists as a first-class category instead of filler.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -174,54 +228,50 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="eyebrow">Four domains</span>
-            <h2>Each category is a first-class pillar.</h2>
+            <span class="eyebrow">The four domains</span>
+            <h2>Each pillar is visible because serious users already think this way.</h2>
           </div>
           <p>
-            The homepage of the product is built around four cards because that is the cleanest mental model for the user:
-            four domains, four scores, one overall picture.
+            Fitness, Nutrition, and Finance are the hard-edged optimizable domains. Time is the novel category that makes
+            the system feel genuinely different.
           </p>
         </div>
-        <div class="pillar-grid">
-          <article class="pillar-card">
-            <span class="kicker">Fitness</span>
-            <h3>Body, recovery, workouts, and performance trends</h3>
-            <p>Fitness combines the signals serious users already care about: training load, recovery, sleep, body metrics, and consistency over time.</p>
-            <ul>
-              <li>Connected wearable and workout data where available</li>
-              <li>Structured trend history instead of one-off snapshots</li>
-              <li>Inputs remain explainable rather than black-boxed</li>
-            </ul>
+        <div class="panel four-col">
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 7v10M18 7v10M2 9v6h4V9zm16 0v6h4V9zM6 12h12"/></svg>
+            </div>
+            <h3>Fitness</h3>
+            <p>Recovery, sleep, body signals, and workouts are presented as a coherent performance picture instead of disconnected metrics.</p>
+            <span class="metric-stat">Recovery + output</span>
+            <span class="metric-hint">Apple Health, wearables, manual logs, and trends.</span>
           </article>
-          <article class="pillar-card">
-            <span class="kicker">Nutrition</span>
-            <h3>Calories, macros, hydration, and meal consistency</h3>
-            <p>Nutrition is designed to lower logging friction while keeping the score grounded in specific, auditable inputs.</p>
-            <ul>
-              <li>Text, photo, and manual meal flows</li>
-              <li>Targets based on real formulas, not motivational copy</li>
-              <li>Meal suggestions and parsing where AI actually helps</li>
-            </ul>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M8 3v7M12 3v7M16 3v7"/><path d="M12 10v11"/><path d="M6 6h12"/></svg>
+            </div>
+            <h3>Nutrition</h3>
+            <p>Calories, macros, hydration, and meal consistency are built around reducing logging friction without dumbing the system down.</p>
+            <span class="metric-stat">Clear pacing</span>
+            <span class="metric-hint">Manual, text, and photo flows where they make sense.</span>
           </article>
-          <article class="pillar-card">
-            <span class="kicker">Finance</span>
-            <h3>Spending, bills, budgets, savings, and discretionary control</h3>
-            <p>Finance exists because personal operating systems break if money lives in a separate blind spot.</p>
-            <ul>
-              <li>Built around read-only financial aggregation</li>
-              <li>Clear visibility into spending discipline and obligations</li>
-              <li>No pretense of being a bank, broker, or financial advisor</li>
-            </ul>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>
+            </div>
+            <h3>Finance</h3>
+            <p>Finance exists because money is part of the same life system. It is presented as read-only context, not as banking theater.</p>
+            <span class="metric-stat">Read-only visibility</span>
+            <span class="metric-hint">Budgets, bills, spending discipline, savings rhythm.</span>
           </article>
-          <article class="pillar-card">
-            <span class="kicker">Time</span>
-            <h3>The shape of the day itself</h3>
-            <p>Time is the novel category: a score derived from passive signals like schedule density, rhythm, attention fragmentation, and day coherence.</p>
-            <ul>
-              <li>Measures day structure, not just task completion</li>
-              <li>Useful precisely because it crosses traditional app boundaries</li>
-              <li>Designed to reduce cognitive load without nagging the user</li>
-            </ul>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+            <h3>Time</h3>
+            <p>Time measures the shape of the day itself: schedule density, rhythm, and coherence across what the phone and services observed.</p>
+            <span class="metric-stat">Novel category</span>
+            <span class="metric-hint">What makes the system feel truly cross-domain.</span>
           </article>
         </div>
       </div>
@@ -232,42 +282,29 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">Deterministic scoring</span>
-            <h2>The core differentiator is math users can trust.</h2>
+            <h2>The key differentiator is not “AI.” It is explainable math users can trust.</h2>
           </div>
           <p>
-            Scores are not generated by AI. The scoring engine is deterministic so it stays fast, reproducible, explainable,
-            and personalized against the user’s own baselines.
+            Every category score is built to stay fast, reproducible, explainable, and personalized. That is what makes
+            the product feel real to smart users and low-risk to reviewers.
           </p>
         </div>
-        <div class="panel deterministic-shell">
-          <div class="formula-card">
-            <div class="formula-row">
-              <strong>Fast</strong>
-              <span>Scores render from structured inputs in milliseconds instead of waiting on a model round-trip.</span>
+        <div class="panel two-col">
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>
             </div>
-            <div class="formula-row">
-              <strong>Free</strong>
-              <span>The product is not forced to burn AI cost every time a user opens the dashboard or checks a trend.</span>
+            <h3>Why the model matters</h3>
+            <p>Deterministic scoring means no API round-trip to compute the core product layer and no model opacity masquerading as truth.</p>
+            <div class="callout">Fast. Free to compute. Reproducible. Explainable. Personalized.</div>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>
             </div>
-            <div class="formula-row">
-              <strong>Explainable</strong>
-              <span>Each score can be tied back to real signals rather than a vague opaque output.</span>
-            </div>
-            <div class="formula-row">
-              <strong>Personalized</strong>
-              <span>As baselines sharpen, the same scoring framework becomes more specific to the individual user.</span>
-            </div>
-          </div>
-          <div class="control-card">
-            <h3>Why reviewers care</h3>
-            <p>
-              Deterministic scoring lowers approval and trust risk. It makes the product easier to understand, easier to
-              defend, and less likely to read like an overreaching AI wellness app.
-            </p>
-            <div class="callout">
-              The assistant can describe what changed and answer questions about context. It does not secretly decide the score.
-            </div>
-          </div>
+            <h3>Why it lowers trust friction</h3>
+            <p>Google OAuth, Microsoft review, Plaid credibility, Garmin partner review, and App Store scrutiny all benefit when the product surface reads as specific and intelligible instead of vague.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -277,26 +314,35 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">AI, used carefully</span>
-            <h2>Useful where it removes friction. Absent where deterministic logic is better.</h2>
+            <h2>The assistant exists to reduce friction and synthesize context, not to become the product’s substitute for clarity.</h2>
           </div>
           <p>
-            Life Dashboard uses AI where the user actually benefits from synthesis or cleanup: context-aware questions,
-            meal parsing, drafting, and ambiguity resolution. It avoids AI where math, rules, or direct data are stronger.
+            Life Dashboard uses AI where it earns its place: parsing messy inputs, answering context-aware questions, and
+            helping users move faster when the problem is ambiguity rather than calculation.
           </p>
         </div>
-        <div class="panel control-grid">
-          <div class="control-card">
+        <div class="panel three-col">
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M8 10h8M8 14h6"/><rect x="4" y="5" width="16" height="14" rx="3"/></svg>
+            </div>
             <h3>Context-aware assistant</h3>
-            <p>The chatbot sits on top of unified life context so it can answer questions that siloed apps cannot.</p>
-          </div>
-          <div class="control-card">
-            <h3>Intentional AI calls</h3>
-            <p>AI is scoped to specific jobs. The product is designed to keep core logic deterministic and API use disciplined.</p>
-          </div>
-          <div class="control-card">
+            <p>The chatbot can answer questions about food, workouts, schedule pressure, and priorities because the data lives in one system.</p>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></svg>
+            </div>
+            <h3>Clear boundaries</h3>
+            <p>AI is not there to hallucinate the score or generate empty motivation. It is there for synthesis and friction reduction where deterministic logic is weaker.</p>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 4v16"/><path d="M4 12h16"/></svg>
+            </div>
             <h3>Agency stays with the user</h3>
-            <p>The product surfaces information and answers questions. It does not pretend to replace judgment or take control away.</p>
-          </div>
+            <p>The product tries to reduce cognitive load without reducing agency. It should feel helpful, not bossy.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -306,95 +352,50 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">Privacy and control</span>
-            <h2>Privacy is part of the product, not an afterthought in the footer.</h2>
+            <h2>Users decide what enters the system. The business is not built around selling their attention or data.</h2>
           </div>
           <p>
-            Users choose what to connect, what to keep manual, and what can be included in AI context. Connections are optional.
-            The product becomes more useful with more context, but control stays with the user.
+            The site should communicate seriousness directly: real company identity, clear contact path, transparent product
+            posture, and no fake compliance theater.
           </p>
         </div>
-        <div class="panel control-grid">
-          <div class="control-card">
-            <h3>User-controlled connections</h3>
-            <p>Connections can be connected or disconnected at any time without breaking the rest of the product experience.</p>
-          </div>
-          <div class="control-card">
-            <h3>Transparent AI usage</h3>
-            <p>Sensitive data is treated carefully, and AI sharing can be controlled per source instead of assumed by default.</p>
-          </div>
-          <div class="control-card">
+        <div class="panel three-col">
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/></svg>
+            </div>
+            <h3>Connections stay optional</h3>
+            <p>The product gets better with more context, but it is designed so the user can still control what is connected and what remains manual.</p>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 12h10"/><path d="M7 8h10"/><path d="M7 16h6"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg>
+            </div>
             <h3>No data selling</h3>
-            <p>Life Dashboard is built as a paid product. The business model is not dependent on advertising or selling user data.</p>
-          </div>
+            <p>Life Dashboard is a paid product. It is not an advertising surface, and the product story does not depend on monetizing user data.</p>
+          </article>
+          <article class="proof-card">
+            <div class="icon-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l7 4v5c0 4.5-2.7 7.7-7 9-4.3-1.3-7-4.5-7-9V7l7-4z"/><path d="M9.5 12.5l1.7 1.7 3.7-3.7"/></svg>
+            </div>
+            <h3>Serious by default</h3>
+            <p>Health, financial, calendar, and communication context are sensitive by nature. The product posture should make that obvious.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Product experience</span>
-            <h2>Built to feel like one system instead of a stack of stitched tools.</h2>
-          </div>
-          <p>
-            The product surface is intentionally calm: category scores, shared day context, and clear drill-downs instead of a noisy feed.
-          </p>
-        </div>
-        <div class="panel product-shot">
-          <div class="shot-stack">
-            <div class="shot-card">
-              <div class="metric-label">Category view</div>
-              <div class="score-strip">
-                <div class="score-pill"><strong>Fitness</strong><span>Recovery, training, sleep</span></div>
-                <div class="score-pill"><strong>Nutrition</strong><span>Calories, macros, hydration</span></div>
-                <div class="score-pill"><strong>Finance</strong><span>Budget, bills, savings</span></div>
-                <div class="score-pill"><strong>Time</strong><span>Rhythm, focus, schedule shape</span></div>
-              </div>
-            </div>
-            <div class="shot-card">
-              <div class="metric-label">Shared day context</div>
-              <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-time">08:10</div>
-                  <div class="timeline-copy"><strong>Fitness score dipped on recovery</strong><span>Sleep regularity and training load were fine, but recovery signal lagged.</span></div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-time">12:30</div>
-                  <div class="timeline-copy"><strong>Nutrition stays on pace</strong><span>Protein and calorie pacing are inside range with room left for the evening meal.</span></div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-time">17:15</div>
-                  <div class="timeline-copy"><strong>Time is the pressure point</strong><span>The day becomes fragmented after work hours, which is where the next decision matters most.</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="shot-card">
-            <div class="metric-label">Why it feels different</div>
-            <p>
-              The app is built around one question: what actually matters today once health, money, and schedule are all considered together?
-            </p>
-            <div class="callout">
-              That is why the product is more credible than a generic AI coach page: it describes a specific system, with specific domains, specific constraints, and a visible point of view.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap panel cta-panel">
+      <div class="wrap cta-panel">
         <div>
           <span class="eyebrow">Contact and access</span>
-          <h2>For early access, reviewer questions, or partnership conversations.</h2>
-          <p>
-            Life Dashboard is operated by Apex Leadership LLC. Contact us at
-            <a class="text-link" href="mailto:nathan@lifedashboardapp.com">nathan@lifedashboardapp.com</a> for product,
-            privacy, or review-related questions.
+          <h2>Built by Apex Leadership LLC for product-minded users, reviewers, and partners who want specifics.</h2>
+          <p class="hero-lede" style="margin-top:12px;max-width:60ch">
+            For early access, review questions, or partner conversations, contact
+            <a class="text-link" href="mailto:nathan@lifedashboardapp.com">nathan@lifedashboardapp.com</a>.
           </p>
         </div>
-        <div class="hero-actions">
+        <div class="hero-actions" style="margin-top:0">
           <a class="button primary" href="mailto:nathan@lifedashboardapp.com?subject=Life%20Dashboard%20website%20inquiry">Email Nathan</a>
           <a class="button secondary" href="/contact">Open contact page</a>
         </div>
@@ -411,11 +412,11 @@
             <span class="brand-sub">Apex Leadership LLC</span>
           </div>
           <p>
-            A premium personal operating system built to unify fragmented life data without reducing user agency.
+            A unified operating layer for ambitious generalists who want one coherent view across health, money, and time.
           </p>
         </div>
         <div>
-          <div class="metric-label">Company</div>
+          <div class="footer-overline">Company</div>
           <div class="legal-links">
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
@@ -423,7 +424,7 @@
           </div>
         </div>
         <div>
-          <div class="metric-label">Legal</div>
+          <div class="footer-overline">Legal</div>
           <div class="legal-links">
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
@@ -433,9 +434,172 @@
       <div class="footer-links">
         <span>© Apex Leadership LLC</span>
         <a href="mailto:nathan@lifedashboardapp.com">nathan@lifedashboardapp.com</a>
-        <span class="footer-note">Product name: Life Dashboard</span>
+        <span class="footer-note">lifedashboardapp.com</span>
       </div>
     </div>
   </footer>
+
+  <script>
+    const domainContent = {
+      overview: {
+        kicker: "Overall Score",
+        title: "Four categories, one daily picture.",
+        score: "84",
+        copy: "The dashboard is built to answer a simple question quickly: what matters most today once health, money, and schedule are visible in the same system?",
+        bars: [
+          ["Fitness", 81],
+          ["Nutrition", 88],
+          ["Finance", 79],
+          ["Time", 86]
+        ],
+        sideKicker: "Context-aware assistant",
+        sideTitle: "The system stays readable.",
+        sideCopy: "AI can summarize tradeoffs when the user asks, but it is not pretending to be the scoring engine.",
+        signals: [
+          ["Sources", "Apple Health, Garmin, Strava, Plaid, Gmail, Outlook, Google Calendar, and manual entry."],
+          ["Control", "Connections are optional. More context improves the dashboard without making it all-or-nothing."],
+          ["Trust", "Deterministic logic keeps the system fast, auditable, and easier to approve."]
+        ]
+      },
+      fitness: {
+        kicker: "Fitness",
+        title: "Recovery, training, and body signals in one card.",
+        score: "81",
+        copy: "Fitness is not reduced to a single wearable stat. The category is designed to show whether the body is actually ready to support what the day is asking for.",
+        bars: [
+          ["Recovery", 76],
+          ["Sleep", 82],
+          ["Training", 85],
+          ["Trend", 79]
+        ],
+        sideKicker: "Connection posture",
+        sideTitle: "Built to ingest, not impersonate.",
+        sideCopy: "The point is not to replace Strava, Garmin, or Apple Health. It is to make them finally add up in the same system.",
+        signals: [
+          ["Wearables", "Apple Health, Health Connect, and Garmin-compatible inputs where available."],
+          ["History", "Trend visibility matters more than isolated PR moments."],
+          ["Use case", "Users should be able to see whether the body is helping or constraining the day."]
+        ]
+      },
+      nutrition: {
+        kicker: "Nutrition",
+        title: "Macros, calories, hydration, and consistency without the usual logging drag.",
+        score: "88",
+        copy: "Nutrition is built around reducing input friction while keeping the score grounded in structured, auditable signals rather than vague wellness language.",
+        bars: [
+          ["Calories", 90],
+          ["Protein", 87],
+          ["Hydration", 78],
+          ["Consistency", 92]
+        ],
+        sideKicker: "AI posture",
+        sideTitle: "Useful for parsing, not for pretending.",
+        sideCopy: "Photo and text input are where AI can earn its place. Targets and scoring stay formula-driven.",
+        signals: [
+          ["Inputs", "Manual entry, text parsing, photo parsing, saved meals, and structured edits."],
+          ["Targets", "Real formulas and baselines, not black-box nutrition advice."],
+          ["Benefit", "The category should feel easier to keep up with than traditional trackers."]
+        ]
+      },
+      finance: {
+        kicker: "Finance",
+        title: "Read-only financial context that belongs in the same dashboard as everything else.",
+        score: "79",
+        copy: "Finance exists because money changes real decisions. The product is designed to show spending pressure, bills, and savings behavior without trying to act like a bank or advisor.",
+        bars: [
+          ["Budget", 73],
+          ["Bills", 84],
+          ["Savings", 77],
+          ["Control", 81]
+        ],
+        sideKicker: "Reviewer clarity",
+        sideTitle: "A clear read-only story.",
+        sideCopy: "This is where specificity matters. The site should make it obvious that financial visibility is for decision quality, not money movement.",
+        signals: [
+          ["Provider", "Plaid-backed read-only aggregation for transactions, accounts, and budget visibility."],
+          ["Posture", "Not a bank. Not a broker. Not a financial advisor."],
+          ["Role", "The category helps users understand what money is doing to the rest of the week."]
+        ]
+      },
+      time: {
+        kicker: "Time",
+        title: "A first-class score for the shape of the day itself.",
+        score: "86",
+        copy: "Time is the novel category. It measures day coherence, schedule density, and rhythm instead of forcing users to manually log another fake productivity ritual.",
+        bars: [
+          ["Rhythm", 89],
+          ["Focus", 76],
+          ["Density", 83],
+          ["Coherence", 88]
+        ],
+        sideKicker: "Why it matters",
+        sideTitle: "This is what makes the system feel new.",
+        sideCopy: "No finance app or meal tracker can really score the day itself. The Time category is where cross-domain context becomes a product, not just a feature list.",
+        signals: [
+          ["Inputs", "Calendar, email, schedule shape, and passive day-context signals."],
+          ["Value", "The category helps explain why a day felt chaotic even when output looked decent."],
+          ["Difference", "Time turns the system into more than a bundle of trackers."]
+        ]
+      }
+    };
+
+    const tabs = document.querySelectorAll(".stage-tab");
+    const stageKicker = document.getElementById("stage-kicker");
+    const stageTitle = document.getElementById("stage-title");
+    const stageScore = document.getElementById("stage-score");
+    const stageCopy = document.getElementById("stage-copy");
+    const stageBars = document.getElementById("stage-bars");
+    const sideKicker = document.getElementById("side-kicker");
+    const sideTitle = document.getElementById("side-title");
+    const sideCopy = document.getElementById("side-copy");
+    const signalStack = document.getElementById("signal-stack");
+
+    function renderBars(items) {
+      stageBars.innerHTML = items.map(([label, value]) => `
+        <div class="bar-row">
+          <strong>${label}</strong>
+          <div class="bar-track"><span class="bar-fill" data-target="${value}"></span></div>
+          <div class="bar-value">${value}</div>
+        </div>
+      `).join("");
+      requestAnimationFrame(() => {
+        document.querySelectorAll(".bar-fill").forEach((bar) => {
+          bar.style.width = bar.dataset.target + "%";
+        });
+      });
+    }
+
+    function renderSignals(items) {
+      signalStack.innerHTML = items.map(([label, copy]) => `
+        <div class="signal-row">
+          <strong>${label}</strong>
+          <span>${copy}</span>
+        </div>
+      `).join("");
+    }
+
+    function activateDomain(key) {
+      const data = domainContent[key];
+      if (!data) return;
+      tabs.forEach((tab) => {
+        tab.setAttribute("aria-selected", String(tab.dataset.domain === key));
+      });
+      stageKicker.textContent = data.kicker;
+      stageTitle.textContent = data.title;
+      stageScore.textContent = data.score;
+      stageCopy.textContent = data.copy;
+      sideKicker.textContent = data.sideKicker;
+      sideTitle.textContent = data.sideTitle;
+      sideCopy.textContent = data.sideCopy;
+      renderBars(data.bars);
+      renderSignals(data.signals);
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => activateDomain(tab.dataset.domain));
+    });
+
+    activateDomain("overview");
+  </script>
 </body>
 </html>
