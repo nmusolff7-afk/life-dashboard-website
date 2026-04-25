@@ -75,7 +75,7 @@ img {
 .topbar-inner {
   width: var(--wrap);
   margin: 0 auto;
-  min-height: 76px;
+  min-height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,15 +85,14 @@ img {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   min-width: 0;
 }
 
 .brand img {
-  width: 24px;
-  height: 24px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
-  filter: brightness(1) saturate(0.5) hue-rotate(210deg);
 }
 
 .brand-copy {
@@ -104,7 +103,7 @@ img {
 .brand-mark {
   color: var(--text);
   font-family: "Bebas Neue", "Rajdhani", sans-serif;
-  font-size: 1.38rem;
+  font-size: 1.6rem;
   line-height: 1;
   letter-spacing: 0.08em;
 }
