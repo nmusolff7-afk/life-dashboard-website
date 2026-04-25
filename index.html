@@ -3,99 +3,439 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Life Dashboard | Apex Leadership LLC</title>
+  <title>Life Dashboard | One view across fitness, nutrition, finance, and time</title>
   <meta
     name="description"
-    content="Life Dashboard helps you run training, nutrition, recovery, and execution from one clear operating system."
+    content="Life Dashboard unifies fitness, nutrition, finance, and time into one intelligent dashboard with deterministic scoring, careful AI, and privacy-first controls."
   />
+  <meta name="theme-color" content="#0A0A0F" />
+  <link rel="icon" href="/apex-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <nav class="nav">
+  <header class="topbar">
+    <div class="topbar-inner">
       <a class="brand" href="/">
-        <strong>Life Dashboard</strong>
-        <span>Apex Leadership LLC</span>
+        <img src="/apex-logo.png" alt="Life Dashboard logo" />
+        <div class="brand-copy">
+          <span class="brand-mark">Life Dashboard</span>
+          <span class="brand-sub">Apex Leadership LLC</span>
+        </div>
       </a>
-      <div class="nav-links">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/about">About</a>
+        <a href="/security">Security</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
-        <a class="button primary" href="mailto:nathan@lifedashboardapp.com">Contact</a>
+        <a class="button secondary" href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">A single intelligent dashboard for ambitious generalists</span>
+          <h1>Stop juggling your life in seven different apps.</h1>
+          <p class="hero-lede">
+            Life Dashboard brings <strong>Fitness</strong>, <strong>Nutrition</strong>, <strong>Finance</strong>, and
+            <strong>Time</strong> into one view. Deterministic scoring shows what matters today, and a context-aware
+            assistant helps users ask better questions without taking away agency.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:nathan@lifedashboardapp.com?subject=Life%20Dashboard%20early%20access">Request early access</a>
+            <a class="button secondary" href="/security">See privacy and security</a>
+          </div>
+          <div class="hero-proof">
+            <span>Real product, real company identity</span>
+            <span>User-controlled source connections</span>
+            <span>Data is not sold</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="window-bar" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="dashboard-frame">
+            <div class="score-banner">
+              <div class="metric-card primary">
+                <div class="metric-label">Overall Score</div>
+                <div class="metric-value">84</div>
+                <div class="metric-text">Fast, reproducible, explainable scoring built from real signals across the four domains.</div>
+              </div>
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <div class="mini-label">Fitness</div>
+                  <div class="mini-value">81</div>
+                  <div class="mini-text">Recovery, workouts, sleep, and trend signals.</div>
+                </div>
+                <div class="mini-card">
+                  <div class="mini-label">Nutrition</div>
+                  <div class="mini-value">88</div>
+                  <div class="mini-text">Calories, macros, hydration, and consistency.</div>
+                </div>
+                <div class="mini-card">
+                  <div class="mini-label">Finance</div>
+                  <div class="mini-value">79</div>
+                  <div class="mini-text">Spending, bills, budget discipline, savings rhythm.</div>
+                </div>
+                <div class="mini-card">
+                  <div class="mini-label">Time</div>
+                  <div class="mini-value">86</div>
+                  <div class="mini-text">Day coherence, schedule density, and attention shape.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-card">
+              <div class="chat-meta">Context-aware assistant</div>
+              <div class="chat-question">“What should I focus on before tonight?”</div>
+              <div class="chat-answer">
+                <strong>Today’s bottleneck is time, not effort.</strong> Nutrition is on track, workout load is manageable, and the schedule gets crowded after 4 PM. The assistant can explain the score inputs and summarize what is most constrained right now.
+              </div>
+            </div>
+
+            <div class="integration-card">
+              <div class="integration-title">Designed around optional source connections</div>
+              <div class="integration-list">
+                <span class="integration-chip">Apple Health</span>
+                <span class="integration-chip">Health Connect</span>
+                <span class="integration-chip">Garmin</span>
+                <span class="integration-chip">Strava</span>
+                <span class="integration-chip">Plaid</span>
+                <span class="integration-chip">Gmail</span>
+                <span class="integration-chip">Outlook</span>
+                <span class="integration-chip">Google Calendar</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-
-    <main class="hero">
-      <section>
-        <div class="eyebrow">A personal operating system for health and execution</div>
-        <h1>See the whole day in one place.</h1>
-        <p class="lede">
-          Life Dashboard brings training, nutrition, sleep, check-ins, and momentum into one clean view so users can
-          stop juggling notes, trackers, and disconnected apps. Built by Apex Leadership LLC for people who want their
-          daily decisions to be honest, visible, and repeatable.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="mailto:nathan@lifedashboardapp.com?subject=Life%20Dashboard%20Access">Request access</a>
-          <a class="button secondary" href="/privacy">Privacy policy</a>
-          <a class="button secondary" href="/terms">Terms of service</a>
-        </div>
-        <p class="microcopy">
-          Sign-in and app-store links can be added later once the public app entry points are finalized.
-        </p>
-      </section>
-
-      <section class="preview">
-        <div class="preview-top">
-          <article class="metric primary">
-            <span>Momentum</span>
-            <strong>86</strong>
-            <span>Daily score built from nutrition, training, and follow-through.</span>
-          </article>
-          <article class="metric accent">
-            <span>Protein target</span>
-            <strong>181g</strong>
-            <span>Macro pacing stays visible before the misses pile up.</span>
-          </article>
-        </div>
-        <article class="card">
-          <h3>One system, not six tabs</h3>
-          <p>
-            Meals, workouts, recovery signals, tasks, and progress history live together so the story of the day
-            stays intact.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Built for daily use</h3>
-          <p>
-            This is not a brochure app. It is designed for the boring, important repetition that actually changes
-            outcomes over time.
-          </p>
-        </article>
-      </section>
-    </main>
-
-    <section class="feature-grid">
-      <article class="card">
-        <h3>Nutrition tracking</h3>
-        <p>Log meals fast, estimate macros, and compare the day against real calorie and macro targets.</p>
-      </article>
-      <article class="card">
-        <h3>Training and recovery</h3>
-        <p>Keep workouts, sleep, and load decisions connected so the plan matches the body you actually have that day.</p>
-      </article>
-      <article class="card">
-        <h3>Execution signals</h3>
-        <p>Check-ins, tasks, and momentum scoring help users close the gap between intention and follow-through.</p>
-      </article>
     </section>
 
-    <footer class="footer">
-      <span>© Apex Leadership LLC. All rights reserved.</span>
-      <div class="footer-links">
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/terms">Terms of Service</a>
-        <a href="mailto:nathan@lifedashboardapp.com">nathan@lifedashboardapp.com</a>
+    <section class="section">
+      <div class="wrap trust-row">
+        <div class="trust-item">
+          <strong>Why this exists</strong>
+          <p>Most users already track seriously. The problem is fragmentation, not motivation.</p>
+        </div>
+        <div class="trust-item">
+          <strong>What makes it different</strong>
+          <p>Deterministic scoring and unified context create a product specialty apps cannot replicate alone.</p>
+        </div>
+        <div class="trust-item">
+          <strong>AI posture</strong>
+          <p>AI is used carefully for synthesis and friction reduction, not as a black box for core scoring.</p>
+        </div>
+        <div class="trust-item">
+          <strong>Reviewer confidence</strong>
+          <p>Specific product language, company identity, legal pages, and clear data controls reduce trust friction.</p>
+        </div>
       </div>
-    </footer>
-  </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Why now</span>
+            <h2>A premium product for people already living across multiple systems.</h2>
+          </div>
+          <p>
+            Life Dashboard is built for high-agency users who already track meals, workouts, money, and commitments. It
+            reduces cognitive overhead by turning scattered inputs into one coherent daily picture.
+          </p>
+        </div>
+        <div class="panel cred-grid">
+          <div class="cred-card">
+            <h3>Fragmentation is the real problem</h3>
+            <p>Users bounce between body metrics, meal tracking, bank apps, email, calendars, and task systems without any shared context.</p>
+          </div>
+          <div class="cred-card">
+            <h3>Unified context changes the quality of decisions</h3>
+            <p>The point is not more data. It is seeing the tradeoffs between recovery, spending, schedule pressure, and execution in one place.</p>
+          </div>
+          <div class="cred-card">
+            <h3>Built for serious daily use</h3>
+            <p>Life Dashboard is not trying to replace every specialist app. It becomes the layer that makes them finally add up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Four domains</span>
+            <h2>Each category is a first-class pillar.</h2>
+          </div>
+          <p>
+            The homepage of the product is built around four cards because that is the cleanest mental model for the user:
+            four domains, four scores, one overall picture.
+          </p>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <span class="kicker">Fitness</span>
+            <h3>Body, recovery, workouts, and performance trends</h3>
+            <p>Fitness combines the signals serious users already care about: training load, recovery, sleep, body metrics, and consistency over time.</p>
+            <ul>
+              <li>Connected wearable and workout data where available</li>
+              <li>Structured trend history instead of one-off snapshots</li>
+              <li>Inputs remain explainable rather than black-boxed</li>
+            </ul>
+          </article>
+          <article class="pillar-card">
+            <span class="kicker">Nutrition</span>
+            <h3>Calories, macros, hydration, and meal consistency</h3>
+            <p>Nutrition is designed to lower logging friction while keeping the score grounded in specific, auditable inputs.</p>
+            <ul>
+              <li>Text, photo, and manual meal flows</li>
+              <li>Targets based on real formulas, not motivational copy</li>
+              <li>Meal suggestions and parsing where AI actually helps</li>
+            </ul>
+          </article>
+          <article class="pillar-card">
+            <span class="kicker">Finance</span>
+            <h3>Spending, bills, budgets, savings, and discretionary control</h3>
+            <p>Finance exists because personal operating systems break if money lives in a separate blind spot.</p>
+            <ul>
+              <li>Built around read-only financial aggregation</li>
+              <li>Clear visibility into spending discipline and obligations</li>
+              <li>No pretense of being a bank, broker, or financial advisor</li>
+            </ul>
+          </article>
+          <article class="pillar-card">
+            <span class="kicker">Time</span>
+            <h3>The shape of the day itself</h3>
+            <p>Time is the novel category: a score derived from passive signals like schedule density, rhythm, attention fragmentation, and day coherence.</p>
+            <ul>
+              <li>Measures day structure, not just task completion</li>
+              <li>Useful precisely because it crosses traditional app boundaries</li>
+              <li>Designed to reduce cognitive load without nagging the user</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Deterministic scoring</span>
+            <h2>The core differentiator is math users can trust.</h2>
+          </div>
+          <p>
+            Scores are not generated by AI. The scoring engine is deterministic so it stays fast, reproducible, explainable,
+            and personalized against the user’s own baselines.
+          </p>
+        </div>
+        <div class="panel deterministic-shell">
+          <div class="formula-card">
+            <div class="formula-row">
+              <strong>Fast</strong>
+              <span>Scores render from structured inputs in milliseconds instead of waiting on a model round-trip.</span>
+            </div>
+            <div class="formula-row">
+              <strong>Free</strong>
+              <span>The product is not forced to burn AI cost every time a user opens the dashboard or checks a trend.</span>
+            </div>
+            <div class="formula-row">
+              <strong>Explainable</strong>
+              <span>Each score can be tied back to real signals rather than a vague opaque output.</span>
+            </div>
+            <div class="formula-row">
+              <strong>Personalized</strong>
+              <span>As baselines sharpen, the same scoring framework becomes more specific to the individual user.</span>
+            </div>
+          </div>
+          <div class="control-card">
+            <h3>Why reviewers care</h3>
+            <p>
+              Deterministic scoring lowers approval and trust risk. It makes the product easier to understand, easier to
+              defend, and less likely to read like an overreaching AI wellness app.
+            </p>
+            <div class="callout">
+              The assistant can describe what changed and answer questions about context. It does not secretly decide the score.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">AI, used carefully</span>
+            <h2>Useful where it removes friction. Absent where deterministic logic is better.</h2>
+          </div>
+          <p>
+            Life Dashboard uses AI where the user actually benefits from synthesis or cleanup: context-aware questions,
+            meal parsing, drafting, and ambiguity resolution. It avoids AI where math, rules, or direct data are stronger.
+          </p>
+        </div>
+        <div class="panel control-grid">
+          <div class="control-card">
+            <h3>Context-aware assistant</h3>
+            <p>The chatbot sits on top of unified life context so it can answer questions that siloed apps cannot.</p>
+          </div>
+          <div class="control-card">
+            <h3>Intentional AI calls</h3>
+            <p>AI is scoped to specific jobs. The product is designed to keep core logic deterministic and API use disciplined.</p>
+          </div>
+          <div class="control-card">
+            <h3>Agency stays with the user</h3>
+            <p>The product surfaces information and answers questions. It does not pretend to replace judgment or take control away.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Privacy and control</span>
+            <h2>Privacy is part of the product, not an afterthought in the footer.</h2>
+          </div>
+          <p>
+            Users choose what to connect, what to keep manual, and what can be included in AI context. Connections are optional.
+            The product becomes more useful with more context, but control stays with the user.
+          </p>
+        </div>
+        <div class="panel control-grid">
+          <div class="control-card">
+            <h3>User-controlled connections</h3>
+            <p>Connections can be connected or disconnected at any time without breaking the rest of the product experience.</p>
+          </div>
+          <div class="control-card">
+            <h3>Transparent AI usage</h3>
+            <p>Sensitive data is treated carefully, and AI sharing can be controlled per source instead of assumed by default.</p>
+          </div>
+          <div class="control-card">
+            <h3>No data selling</h3>
+            <p>Life Dashboard is built as a paid product. The business model is not dependent on advertising or selling user data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Product experience</span>
+            <h2>Built to feel like one system instead of a stack of stitched tools.</h2>
+          </div>
+          <p>
+            The product surface is intentionally calm: category scores, shared day context, and clear drill-downs instead of a noisy feed.
+          </p>
+        </div>
+        <div class="panel product-shot">
+          <div class="shot-stack">
+            <div class="shot-card">
+              <div class="metric-label">Category view</div>
+              <div class="score-strip">
+                <div class="score-pill"><strong>Fitness</strong><span>Recovery, training, sleep</span></div>
+                <div class="score-pill"><strong>Nutrition</strong><span>Calories, macros, hydration</span></div>
+                <div class="score-pill"><strong>Finance</strong><span>Budget, bills, savings</span></div>
+                <div class="score-pill"><strong>Time</strong><span>Rhythm, focus, schedule shape</span></div>
+              </div>
+            </div>
+            <div class="shot-card">
+              <div class="metric-label">Shared day context</div>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-time">08:10</div>
+                  <div class="timeline-copy"><strong>Fitness score dipped on recovery</strong><span>Sleep regularity and training load were fine, but recovery signal lagged.</span></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-time">12:30</div>
+                  <div class="timeline-copy"><strong>Nutrition stays on pace</strong><span>Protein and calorie pacing are inside range with room left for the evening meal.</span></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-time">17:15</div>
+                  <div class="timeline-copy"><strong>Time is the pressure point</strong><span>The day becomes fragmented after work hours, which is where the next decision matters most.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shot-card">
+            <div class="metric-label">Why it feels different</div>
+            <p>
+              The app is built around one question: what actually matters today once health, money, and schedule are all considered together?
+            </p>
+            <div class="callout">
+              That is why the product is more credible than a generic AI coach page: it describes a specific system, with specific domains, specific constraints, and a visible point of view.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap panel cta-panel">
+        <div>
+          <span class="eyebrow">Contact and access</span>
+          <h2>For early access, reviewer questions, or partnership conversations.</h2>
+          <p>
+            Life Dashboard is operated by Apex Leadership LLC. Contact us at
+            <a class="text-link" href="mailto:nathan@lifedashboardapp.com">nathan@lifedashboardapp.com</a> for product,
+            privacy, or review-related questions.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:nathan@lifedashboardapp.com?subject=Life%20Dashboard%20website%20inquiry">Email Nathan</a>
+          <a class="button secondary" href="/contact">Open contact page</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-shell">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-copy">
+            <span class="brand-mark">Life Dashboard</span>
+            <span class="brand-sub">Apex Leadership LLC</span>
+          </div>
+          <p>
+            A premium personal operating system built to unify fragmented life data without reducing user agency.
+          </p>
+        </div>
+        <div>
+          <div class="metric-label">Company</div>
+          <div class="legal-links">
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/security">Security</a>
+          </div>
+        </div>
+        <div>
+          <div class="metric-label">Legal</div>
+          <div class="legal-links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <span>© Apex Leadership LLC</span>
+        <a href="mailto:nathan@lifedashboardapp.com">nathan@lifedashboardapp.com</a>
+        <span class="footer-note">Product name: Life Dashboard</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

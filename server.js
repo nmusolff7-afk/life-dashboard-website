@@ -7,7 +7,10 @@ const root = __dirname;
 
 const routes = {
   "/": "index.html",
+  "/about": "about.html",
+  "/contact": "contact.html",
   "/privacy": "privacy.html",
+  "/security": "security.html",
   "/terms": "terms.html",
 };
 
