@@ -10,14 +10,13 @@ It is intentionally separate from the Flask app so the deployment can be clean:
 
 ## Railway setup
 
-Create a new Railway service from this same repository and set the service root directory to:
+Create a new Railway project from this repository.
 
-`website`
+Recommended Railway settings:
 
-Railway can run it with:
-
-- Install: automatic
-- Start command: `node server.js`
+- Builder: `Dockerfile`
+- Root directory: blank
+- Start command: blank
 
 Then attach:
 
