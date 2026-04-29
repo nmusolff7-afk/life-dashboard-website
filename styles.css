@@ -287,9 +287,9 @@ img {
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%),
     url("/Logo_transparent.png?v=20260428");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, 880px auto;
-  background-position: 0 0, 0 0, right -170px top -120px;
-  opacity: 0.22;
+  background-size: auto, auto, 1600px auto;
+  background-position: 0 0, 0 0, right -420px top -250px;
+  opacity: 0.24;
   pointer-events: none;
 }
 
