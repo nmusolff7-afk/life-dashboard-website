@@ -285,11 +285,11 @@ img {
   background-image:
     radial-gradient(circle at 78% 18%, rgba(108, 111, 255, 0.24), transparent 28%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%),
-    url("/Logo_background.png?v=20260428");
+    url("/Logo_transparent.png?v=20260428");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, 620px auto;
-  background-position: 0 0, 0 0, right -120px top -120px;
-  opacity: 0.16;
+  background-size: auto, auto, 880px auto;
+  background-position: 0 0, 0 0, right -170px top -120px;
+  opacity: 0.22;
   pointer-events: none;
 }
 
