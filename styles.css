@@ -275,6 +275,27 @@ img {
 .hero-stage {
   padding: 18px;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 78% 18%, rgba(108, 111, 255, 0.24), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%),
+    url("/Logo_background.png?v=20260428");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, 620px auto;
+  background-position: 0 0, 0 0, right -120px top -120px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.hero-stage > * {
+  position: relative;
+  z-index: 1;
 }
 
 .stage-top {
