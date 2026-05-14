@@ -37,15 +37,33 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">Security and control</span>
-          <h2>Designed for sensitive personal data without pretending to be something it is not.</h2>
+          <h2>Designed for sensitive personal data with a narrow, reviewable product posture.</h2>
         </div>
         <p>
-          Life Dashboard handles health, financial, calendar, and communication context. That requires a serious product
-          posture around consent, visibility, and data handling.
+          Life Dashboard handles health, financial, calendar, and communication context. That requires a serious approach
+          to consent, access control, encryption, deletion, and reviewer clarity.
         </p>
       </div>
 
       <div class="security-grid">
+        <article class="security-card">
+          <h3>Governance and security contact</h3>
+          <ul>
+            <li>Life Dashboard is operated by Apex Leadership LLC.</li>
+            <li>Security and privacy oversight currently sits with Nathan Musolf, Founder.</li>
+            <li>Security inquiries can be sent to <a class="text-link" href="mailto:admin@lifedashboardapp.com">admin@lifedashboardapp.com</a>.</li>
+          </ul>
+        </article>
+
+        <article class="security-card">
+          <h3>Documented policies and access governance</h3>
+          <ul>
+            <li>Operational access to production systems is intended to be limited to authorized personnel only.</li>
+            <li>Administrative access is expected to follow least-privilege principles.</li>
+            <li>Security, privacy, access, and retention requirements are treated as product-operating requirements, not marketing claims.</li>
+          </ul>
+        </article>
+
         <article class="security-card">
           <h3>User-controlled connections</h3>
           <ul>
@@ -56,12 +74,11 @@
         </article>
 
         <article class="security-card">
-          <h3>AI is not the scoring engine</h3>
+          <h3>MFA and account protection</h3>
           <ul>
-            <li>Core category scoring is deterministic rather than model-generated.</li>
-            <li>AI is used intentionally for limited parsing and user-invoked assistance.</li>
-            <li>Connected fitness and activity data are not used for AI or machine-learning model training.</li>
-            <li>The product is designed so not every dashboard action requires an AI call.</li>
+            <li>Administrative access to critical systems should be protected with multi-factor authentication wherever supported.</li>
+            <li>Consumer-facing connection flows may also involve additional verification requirements presented by the underlying provider.</li>
+            <li>Authentication and access controls are intended to reduce unauthorized access to connected personal data.</li>
           </ul>
         </article>
 
@@ -75,11 +92,39 @@
         </article>
 
         <article class="security-card">
-          <h3>Clear deletion and disconnect paths</h3>
+          <h3>Encryption and hosted infrastructure</h3>
+          <ul>
+            <li>Data is intended to be protected in transit using modern TLS-based encryption.</li>
+            <li>Stored consumer data is intended to reside on infrastructure that supports encryption and operational security controls appropriate for hosted software products.</li>
+            <li>Connected-source data handling is designed around minimizing unnecessary exposure and limiting processing to product functionality.</li>
+          </ul>
+        </article>
+
+        <article class="security-card">
+          <h3>Vulnerability management</h3>
+          <ul>
+            <li>Security maintenance includes dependency review, patching, and software-lifecycle attention as part of normal product operations.</li>
+            <li>Production systems and developer environments are expected to be maintained with current security updates and access protections.</li>
+            <li>Identified issues are intended to be reviewed and remediated according to risk and operational impact.</li>
+          </ul>
+        </article>
+
+        <article class="security-card">
+          <h3>Deletion, retention, and disconnect paths</h3>
           <ul>
             <li>Users can request deletion of their account and data.</li>
             <li>Connections can be revoked or disconnected.</li>
-            <li>Privacy questions can be directed to the business contact listed on this site.</li>
+            <li>Retention decisions are intended to balance product operations, legal obligations, fraud prevention, and user requests.</li>
+          </ul>
+        </article>
+
+        <article class="security-card">
+          <h3>AI is not the scoring engine</h3>
+          <ul>
+            <li>Core category scoring is deterministic rather than model-generated.</li>
+            <li>AI is used intentionally for limited parsing and user-invoked assistance.</li>
+            <li>Connected fitness and activity data are not used for AI or machine-learning model training.</li>
+            <li>The product is designed so not every dashboard action requires an AI call.</li>
           </ul>
         </article>
       </div>
@@ -89,15 +134,15 @@
           <article class="faq-card">
             <h3>What this page is for</h3>
             <p>
-              This page exists to make the product’s data-control posture legible to users, reviewers, and partners. It is
-              a product-facing summary, not a certification or compliance claim.
+              This page exists to make the product's security and data-control posture legible to users, reviewers, and
+              partners. It is a product-facing summary, not a certification or compliance claim.
             </p>
           </article>
           <article class="faq-card">
             <h3>What it does not claim</h3>
             <p>
-              Life Dashboard does not claim HIPAA status, medical-device status, or financial-advisor status. It does not
-              present itself as a bank, broker, or healthcare provider.
+              Life Dashboard does not claim HIPAA status, medical-device status, financial-advisor status, or bank/broker
+              status. It is not presented as a payments product or financial institution.
             </p>
           </article>
         </div>
