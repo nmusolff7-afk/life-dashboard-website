@@ -1015,6 +1015,11 @@ img {
     max-width: none;
     margin-bottom: 14px;
   }
+
+  .feature-panel-wide {
+    grid-row: auto;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1022,17 +1027,57 @@ img {
     width: min(100% - 20px, 1180px);
   }
 
+  .topbar {
+    backdrop-filter: blur(14px);
+  }
+
   .topbar-inner {
-    min-height: 72px;
-    align-items: flex-start;
+    min-height: 0;
+    align-items: stretch;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 14px 0;
+    gap: 12px;
+    padding: 12px 0 14px;
+  }
+
+  .brand {
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand-mark {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .brand-sub {
+    font-size: 0.82rem;
+  }
+
+  .nav-links {
+    gap: 10px 14px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 0.88rem;
   }
 
   .nav-links,
   .hero-actions {
     width: 100%;
+  }
+
+  .hero {
+    padding: 28px 0 16px;
+  }
+
+  .hero-shell {
+    gap: 18px;
   }
 
   .hero-copy,
@@ -1042,8 +1087,238 @@ img {
     padding: 20px;
   }
 
+  .hero-copy {
+    padding: 26px 18px;
+  }
+
+  .hero-copy::before {
+    inset: -24% 10% 58% -18%;
+  }
+
+  .hero h1 {
+    margin-top: 14px;
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
+    line-height: 0.92;
+  }
+
+  .hero-lede {
+    margin-top: 14px;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    margin-top: 18px;
+  }
+
   .hero-statline {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .hero-stat {
+    padding: 12px 12px 11px;
+    border-radius: 16px;
+  }
+
+  .hero-stat-value {
+    font-size: 1rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.74rem;
+  }
+
+  .hero-points {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .hero-point {
+    grid-template-columns: 20px 1fr;
+    gap: 10px;
+  }
+
+  .hero-stage {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .hero-stage::before {
+    background-size: auto, auto, 640px auto;
+    background-position: 0 0, 0 0, right -220px top -80px;
+    opacity: 0.18;
+  }
+
+  .hero-stage::after {
+    inset: 12px;
+    border-radius: 20px;
+  }
+
+  .hero-float {
+    padding: 12px 14px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hero-float strong {
+    font-size: 0.88rem;
+  }
+
+  .stage-top {
+    margin-bottom: 14px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .stage-status {
+    min-height: 28px;
+    font-size: 0.76rem;
+  }
+
+  .stage-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    margin-right: -4px;
+    scrollbar-width: none;
+  }
+
+  .stage-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stage-tab {
+    flex: 0 0 auto;
+    min-height: 36px;
+    padding: 0 11px;
+    font-size: 0.86rem;
+  }
+
+  .stage-card-title {
+    font-size: 1.18rem;
+  }
+
+  .overall-number {
+    font-size: 2.5rem;
+  }
+
+  .stage-card-copy {
+    font-size: 0.9rem;
+  }
+
+  .feature-mosaic {
+    gap: 12px;
+  }
+
+  .feature-panel,
+  .feature-panel-wide {
+    min-height: auto;
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .feature-panel-head strong {
+    font-size: 1.18rem;
+  }
+
+  .feature-panel p {
+    margin-top: 12px;
+    font-size: 0.94rem;
+    line-height: 1.58;
+  }
+
+  .feature-rows {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .feature-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .feature-row strong {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 22px 0;
+  }
+
+  .section-head {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .section-head h2,
+  .cta-panel h2 {
+    font-size: clamp(1.7rem, 8vw, 2.4rem);
+    line-height: 1.02;
+  }
+
+  .section-head p {
+    font-size: 0.95rem;
+    line-height: 1.58;
+  }
+
+  .proof-track {
+    gap: 10px;
+    padding: 12px 0;
+    animation-duration: 40s;
+  }
+
+  .proof-pill {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 0.84rem;
+  }
+
+  .proof-card,
+  .about-card,
+  .contact-card,
+  .security-card,
+  .faq-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .metric-stat {
+    font-size: 1.28rem;
+  }
+
+  .cta-panel {
+    padding: 18px;
+  }
+
+  .footer {
+    padding: 18px 0 32px;
+  }
+
+  .footer-shell {
+    gap: 14px;
+    padding-top: 16px;
+  }
+
+  .footer-links {
+    gap: 10px 14px;
+  }
+
+  .legal-page {
+    padding: 22px 0 34px;
+  }
+
+  .legal-shell h1 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .legal-shell h2 {
+    margin-top: 22px;
+    font-size: 1.04rem;
   }
 
   .bar-row {
